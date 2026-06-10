@@ -1,1 +1,2 @@
 # Chicken-Cross-Road
+Chicken Cross Road is an arcade-style game where the player controls a chicken and guides it across roads, rivers, and railway tracks while avoiding obstacles such as vehicles, trains, and water hazards. The objective is to travel as far as possible without getting hit or falling into danger. The game features simple controls, increasing difficulty, and a score system based on the distance covered, providing an engaging and challenging gaming experience.
