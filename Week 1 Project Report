@@ -1,0 +1,65 @@
+Chicken Cross Road Game Development
+
+Weekly Project Report
+
+Week 1: Project Initialization & Input System
+
+Objective
+
+The objective of Week 1 was to set up the development environment, create the project structure, and implement the basic game window, game loop, and keyboard input system for the Chicken Cross Road game.
+
+Activities Completed
+
+1. Development Environment Setup
+
+- Installed Java Development Kit (JDK).
+- Installed Visual Studio Code (VS Code).
+- Installed Java Extension Pack in VS Code.
+- Created a new Java project.
+
+2. Project Structure Creation
+
+Created the initial project files:
+
+- Main.java
+- GamePanel.java
+- KeyHandler.java
+
+3. Game Window Development
+
+- Created the main game window using Java Swing (JFrame).
+- Configured the window size (800 × 600 pixels).
+- Disabled window resizing.
+- Set the game title to Chicken Cross Road.
+
+4. Game Loop Implementation
+
+- Created a game thread.
+- Implemented the main game loop using the Runnable interface.
+- Refreshed the screen approximately 60 times per second.
+
+5. Keyboard Input System
+
+- Implemented keyboard controls using KeyListener.
+- Configured movement using:
+  - W – Move Up
+  - A – Move Left
+  - S – Move Down
+  - D – Move Right
+
+6. Player Representation
+
+- Displayed a white square as the temporary player.
+- Verified that player movement worked correctly.
+
+Deliverables
+
+- Main.java
+- GamePanel.java
+- KeyHandler.java
+- Working game window
+- Functional keyboard movement
+
+Outcome
+
+At the end of Week 1, a functional Java game window was successfully created with a working game loop and keyboard-controlled player movement.
