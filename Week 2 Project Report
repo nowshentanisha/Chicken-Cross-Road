@@ -1,0 +1,56 @@
+Week 2: Player System & Grid-Based Movement
+
+Objective
+
+The objective of Week 2 was to improve the project structure using Object-Oriented Programming (OOP), implement grid-based player movement, restrict player movement within the game window, and prepare the camera system.
+
+Activities Completed
+
+1. Player Class Development
+
+- Created a separate Player.java class.
+- Moved player properties from GamePanel to Player.
+- Stored player position (x, y) and tile size in the Player class.
+
+2. Object-Oriented Programming (OOP)
+
+- Separated player logic from the main game panel.
+- Improved project organization using different classes.
+
+3. Grid-Based Movement
+
+- Implemented tile-based movement.
+- Player now moves one tile (50 pixels) for each key press.
+- Movement is similar to Crossy Road style.
+
+4. Boundary Restriction
+
+- Prevented the player from moving outside the game window.
+- Added boundary checking for all four directions.
+
+5. Camera System Preparation
+
+- Created Camera.java.
+- Implemented a basic camera object.
+- Added camera update logic to follow the player.
+- Prepared the project for future camera scrolling.
+
+Project Structure
+
+- Main.java
+- GamePanel.java
+- KeyHandler.java
+- Player.java
+- Camera.java
+
+Deliverables
+
+- Player.java
+- Camera.java
+- Grid-based player movement
+- Boundary checking
+- OOP-based project structure
+
+Outcome
+
+At the end of Week 2, the game was successfully upgraded using Object-Oriented Programming. The player moves on a grid, remains inside the game boundaries, and the project is prepared for future map and camera scrolling implementation.
