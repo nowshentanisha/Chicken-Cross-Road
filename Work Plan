@@ -1,0 +1,159 @@
+Chicken Cross Road Work Plan (10 Weeks)
+
+Week 1: Project Initializing & Player Input System
+Objective:
+Set up Java development environment and create the basic game structure.
+Activities:
+- Install and configure Java JDK.
+- Configure VS Code for Java development.
+- Create project folder structure.
+- Create main game window using Java Swing.
+- Implement game loop.
+- Add keyboard input controls.
+Deliverables:
+- Main.java
+- Basic game window
+- Keyboard movement system
+Expected Outcome:
+Player can move using keyboard controls.
+
+
+
+
+Week 2: Grid-Based Movement & Camera System
+Objective:
+Implement Cross Road style movement.
+Activities:
+- Create grid-based movement system.
+- Restrict player movement to tiles.
+- Add smooth movement animation.
+- Create camera scrolling system.
+- Manage game coordinates.
+Deliverables:
+- Updated Player.java
+- Camera.java
+- Movement system
+Expected Outcome:
+Player moves smoothly through the game world.
+
+Week 3: Environment Development
+Objective:
+Create the game environment.
+Activities:
+- Design grass area.
+- Create road area.
+- Create river area.
+- Implement tile-based map system.
+- Add background objects.
+Deliverables:
+- Map.java
+- Tile.java
+- Environment system
+
+Expected Outcome:
+Player can move through different environments.
+
+Week 4: Vehicle System Implementation
+Objective:
+Add moving obstacles.
+Activities:
+- Create Vehicle class.
+- Implement car movement.
+- Add vehicle spawning system.
+- Create multiple vehicle types.
+- Control vehicle speed.
+Deliverables:
+- Vehicle.java
+- VehicleSpawner.java
+Expected Outcome:
+Cars move continuously across the road.
+
+Week 5: Collision Detection & Player Death System
+Objective:
+Implement collision mechanics.
+Activities:
+- Add collision detection.
+- Detect player and vehicle collision.
+- Create player death system.
+- Add restart functionality.
+- Create GameManager class.
+Deliverables:
+- Collision.java
+- GameManager.java
+Expected Outcome:
+Player dies when hit by vehicles and game over appears.
+
+Week 6: River & Floating Object Mechanics
+Objective:
+Add advanced environment hazards.
+Activities:
+- Create floating logs.
+- Add river movement.
+- Implement water collision.
+- Allow player movement with logs.
+Deliverables:
+- Log.java
+- RiverSystem.java
+Expected Outcome:
+Player can cross rivers using floating objects.
+
+Week 7: Score System & Procedural Map Generation
+Objective:
+Create endless gameplay.
+Activities:
+- Add score calculation.
+- Track player progress.
+- Generate random road/river sections.
+- Create increasing difficulty.
+Deliverables:
+- Score.java
+- LevelGenerator.java
+Expected Outcome:
+Game world generates dynamically with scoring.
+Week 8: Optimization & Audio Integration
+Objective:
+Improve performance and game experience.
+Activities:
+- Optimize object creation.
+- Remove unused objects.
+- Add sound effects.
+- Add background music.
+Deliverables:
+- AudioManager.java
+- Optimized game engine
+Expected Outcome:
+Smooth gameplay with sound support.
+
+Week 9: User Interface & Date Persistence
+Objective:
+Create complete game interface.
+Activities:
+- Create main menu.
+- Add score display.
+- Create game over screen.
+- Add restart and exit buttons.
+- Save high score using files.
+Deliverables:
+- UIManager.java
+- SaveSystem.java
+Expected Outcome:
+Game has complete UI and saved high scores.
+
+
+Week 10: Testing & Final Deployment
+Objective:
+Prepare final project.
+Activities:
+- Test all features.
+- Fix bugs.
+- Improve code structure.
+- Apply OOP principles.
+- Create executable package.
+- Prepare documentation.
+Deliverables:
+- Final Java project
+- Source code
+- Documentation
+- Demo video
+Expected Outcome:
+A complete playable 2D Chicken Cross Road game.
