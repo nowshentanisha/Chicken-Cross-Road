@@ -1,0 +1,56 @@
+Week 3 Project Report
+
+Project Title: Chicken Cross Road
+
+Week 3: Environment Development and Obstacle System
+
+Objective:
+The main objective of Week 3 was to develop the basic game environment and introduce moving obstacles. The map was created using Grass, Road, and River areas. Multiple cars were also added to make the gameplay more interactive.
+
+Work Done
+
+1. Game Environment Development
+A basic 2D environment was created using the TileManager class. Different colored areas were used to represent Grass, Road, and River.
+
+2. Tile System
+Two classes, Tile and TileManager, were created. The Tile class stores tile-related information, while TileManager is responsible for drawing the game environment.
+
+3. Car Class Development
+A new Car class was created to represent obstacles. Each car has its own position, size, and speed.
+
+4. Multiple Cars
+Three cars were added to the game:
+
+car1
+car2
+car3
+
+The cars move continuously across the road.
+
+5. Car Movement
+A game update system was implemented so that the cars automatically move. When a car goes outside the screen, it returns from the opposite side.
+
+6. Collision Detection
+Collision detection was implemented between the Player and Cars. Rectangle boundaries were used to detect whether the Player and a Car overlap.
+
+When a collision occurs, the Player is reset to the starting position.
+
+Classes Used
+
+Class	Purpose
+
+Tile.java	Stores tile information
+TileManager.java	Draws the game environment
+Car.java	Controls car position and movement
+Player.java	Controls the player and collision boundary
+GamePanel.java	Controls game loop, drawing and collision
+Camera.java	Controls camera position
+
+
+Outcome
+
+At the end of Week 3, the game successfully contains a basic environment with Grass, Road and River areas. Multiple moving cars have been added as obstacles. Collision detection between the Player and Cars is also working. When the Player hits a car, the Player returns to the starting position.
+
+Conclusion
+
+Week 3 successfully established the basic game environment and obstacle system of Chicken Cross Road. The game is now ready for further gameplay features such as a proper winning condition, improved obstacles, scoring and game-over/restart systems in the upcoming weeks.
