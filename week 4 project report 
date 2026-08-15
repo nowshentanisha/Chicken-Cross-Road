@@ -1,0 +1,58 @@
+Week 4 Project Report
+
+Project Title
+
+Chicken Cross Road Game (Java)
+
+Week 4: Vehicle System Implementation
+
+Objective
+
+The objective of Week 4 was to implement a vehicle system by adding moving obstacles (cars), handling collision detection, and improving the overall gameplay.
+
+Activities Completed
+
+- Created the Car class to represent moving vehicles.
+- Implemented continuous car movement across the road.
+- Added multiple cars with different starting positions.
+- Assigned different speeds to each car.
+- Assigned different colors to each car to represent multiple vehicle types.
+- Increased the road width to provide better movement space.
+- Adjusted the player's starting position to the middle grass field.
+- Improved tree placement for a better game environment.
+- Implemented collision detection between the player and vehicles.
+- Reset the player to the starting position after a collision.
+- Removed one unnecessary vehicle to avoid overlapping and improve gameplay.
+
+Problems Faced
+
+- The "Vehicle.java" file showed compilation errors while implementing the vehicle system.
+- Some vehicles overlapped because they were moving in the same lane.
+- The road width was too small at first.
+- The player's starting position was not properly aligned.
+
+Solutions
+
+- Used the existing Car class instead of the "Vehicle" class.
+- Changed vehicle positions and speeds to reduce overlapping.
+- Increased the road width.
+- Repositioned the player and trees for better game balance.
+
+Deliverables
+
+- Car.java
+- Updated GamePanel.java
+- Vehicle movement system
+- Collision detection system
+- Multiple colored vehicles with different speeds
+
+Expected Outcome
+
+- Vehicles move continuously across the road.
+- Each vehicle has a different speed and color.
+- The player resets after colliding with a vehicle.
+- The game environment is more organized and visually improved.
+
+Conclusion
+
+Week 4 was completed successfully. The vehicle movement, collision detection, and multiple vehicle implementation were finished, making the game more interactive and closer to the original Chicken Cross Road gameplay.
