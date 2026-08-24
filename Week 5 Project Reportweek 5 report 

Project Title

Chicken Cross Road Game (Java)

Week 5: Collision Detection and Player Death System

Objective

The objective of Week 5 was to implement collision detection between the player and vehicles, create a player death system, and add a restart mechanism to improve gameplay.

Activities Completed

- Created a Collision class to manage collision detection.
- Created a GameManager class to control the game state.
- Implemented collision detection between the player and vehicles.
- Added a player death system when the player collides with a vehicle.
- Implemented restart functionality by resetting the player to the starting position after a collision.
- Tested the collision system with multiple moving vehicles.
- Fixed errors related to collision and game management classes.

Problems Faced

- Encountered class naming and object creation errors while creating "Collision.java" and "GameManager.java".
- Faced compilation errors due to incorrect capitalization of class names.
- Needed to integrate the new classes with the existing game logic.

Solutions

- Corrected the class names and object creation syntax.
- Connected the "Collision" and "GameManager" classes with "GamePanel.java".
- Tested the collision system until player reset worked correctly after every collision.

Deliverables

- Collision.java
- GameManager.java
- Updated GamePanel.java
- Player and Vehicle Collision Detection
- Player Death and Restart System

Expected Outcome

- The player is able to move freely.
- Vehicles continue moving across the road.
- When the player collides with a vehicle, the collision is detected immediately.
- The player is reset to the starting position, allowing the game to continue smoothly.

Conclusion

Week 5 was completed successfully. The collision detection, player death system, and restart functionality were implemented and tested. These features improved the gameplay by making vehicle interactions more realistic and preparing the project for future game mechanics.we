@@ -1,0 +1,52 @@
+Week 5 Project Report
+
+Project Title
+
+Chicken Cross Road Game (Java)
+
+Week 5: Collision Detection and Player Death System
+
+Objective
+
+The objective of Week 5 was to implement collision detection between the player and vehicles, create a player death system, and add a restart mechanism to improve gameplay.
+
+Activities Completed
+
+- Created a Collision class to manage collision detection.
+- Created a GameManager class to control the game state.
+- Implemented collision detection between the player and vehicles.
+- Added a player death system when the player collides with a vehicle.
+- Implemented restart functionality by resetting the player to the starting position after a collision.
+- Tested the collision system with multiple moving vehicles.
+- Fixed errors related to collision and game management classes.
+
+Problems Faced
+
+- Encountered class naming and object creation errors while creating "Collision.java" and "GameManager.java".
+- Faced compilation errors due to incorrect capitalization of class names.
+- Needed to integrate the new classes with the existing game logic.
+
+Solutions
+
+- Corrected the class names and object creation syntax.
+- Connected the "Collision" and "GameManager" classes with "GamePanel.java".
+- Tested the collision system until player reset worked correctly after every collision.
+
+Deliverables
+
+- Collision.java
+- GameManager.java
+- Updated GamePanel.java
+- Player and Vehicle Collision Detection
+- Player Death and Restart System
+
+Expected Outcome
+
+- The player is able to move freely.
+- Vehicles continue moving across the road.
+- When the player collides with a vehicle, the collision is detected immediately.
+- The player is reset to the starting position, allowing the game to continue smoothly.
+
+Conclusion
+
+Week 5 was completed successfully. The collision detection, player death system, and restart functionality were implemented and tested. These features improved the gameplay by making vehicle interactions more realistic and preparing the project for future game mechanics.
