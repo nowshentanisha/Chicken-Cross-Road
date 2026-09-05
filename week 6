@@ -1,0 +1,54 @@
+Week 6 Project Report
+
+Project Title
+
+Chicken Cross Road Game (Java)
+
+Week 6: River and Floating Log System
+
+Objective
+
+The objective of Week 6 was to implement the river crossing mechanism by adding floating logs and creating river collision logic. This feature makes the gameplay more challenging and realistic.
+
+Activities Completed
+
+- Created a Log class to represent floating wooden logs.
+- Created a RiverSystem class to manage river-related mechanics.
+- Added multiple floating logs to the river.
+- Implemented continuous log movement across the river.
+- Allowed the player to move together with a log when standing on it.
+- Implemented river collision detection.
+- Reset the player to the starting position when falling into the river without standing on a log.
+- Tested the river system and adjusted the log positions for smooth gameplay.
+
+Problems Faced
+
+- Initially, the logs appeared outside the river due to incorrect Y-axis positioning.
+- Encountered file naming issues ("Log.java" and "RiverSystem.java") which caused compilation errors.
+- Needed to adjust the log positions to match the river layout.
+
+Solutions
+
+- Corrected the file names to match the class names.
+- Adjusted the log positions so that they remained inside the river.
+- Verified player interaction with the logs and tested the river collision system.
+
+Deliverables
+
+- Log.java
+- RiverSystem.java
+- Updated GamePanel.java
+- Floating Log Movement
+- River Collision Detection
+- Player Movement on Logs
+
+Expected Outcome
+
+- Floating logs move continuously across the river.
+- The player can safely cross the river by standing on a log.
+- If the player enters the river without standing on a log, the player is reset to the starting position.
+- The river system increases the challenge and realism of the game.
+
+Conclusion
+
+Week 6 was completed successfully. The floating log system and river mechanics were implemented and tested. These features significantly improved the gameplay experience and prepared the project for the next stage, where additional game mechanics and objectives can be added.
