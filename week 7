@@ -1,0 +1,278 @@
+Week 7 Project Report
+
+Score System & Procedural Map Generation
+
+1. Introduction
+
+In Week 7, the main focus was to make the Chicken Cross Road game more dynamic and challenging. A score system was added to track the player's progress. A level generator was also implemented to generate random road and river sections. The game difficulty increases as the player's score increases.
+
+
+---
+
+2. Objective
+
+The main objective of Week 7 was to:
+
+Add a score calculation system.
+
+Track the player's progress.
+
+Generate random road and river sections.
+
+Increase the game difficulty gradually.
+
+Make the game world more dynamic.
+
+
+
+---
+
+3. Activities Completed
+
+The following features were implemented during Week 7:
+
+1. Created Score.java.
+
+
+2. Added score increase when the player moves forward.
+
+
+3. Displayed the score on the game screen.
+
+
+4. Created LevelGenerator.java.
+
+
+5. Added random Road/River section generation.
+
+
+6. Connected the level generator with TileManager.
+
+
+7. Added increasing difficulty based on score.
+
+
+8. Increased car and log speeds at higher scores.
+
+
+9. Reset the score when the player dies.
+
+
+
+
+---
+
+4. Score System
+
+A new class named Score.java was created to manage the player's score.
+
+The main methods are:
+
+public void increaseScore()
+
+This method increases the score by one.
+
+public int getScore()
+
+This method returns the current score.
+
+public void resetScore()
+
+This method resets the score to zero when the player dies.
+
+The score is increased when the player moves upward:
+
+if (keyH.up) {
+    player.y -= player.tileSize;
+    score.increaseScore();
+    keyH.up = false;
+}
+
+The score is displayed on the game screen using:
+
+g.drawString("Score: " + score.getScore(), 20, 30);
+
+
+---
+
+5. Procedural Map Generation
+
+A new class named LevelGenerator.java was created.
+
+The generator randomly produces two types of sections:
+
+0 → Road
+1 → River
+
+Random generation is implemented using Java's Random class.
+
+The generated section is then passed to the TileManager:
+
+int section = levelGenerator.generateSection();
+
+tileM.generateSection(section);
+
+This allows the game to generate different road and river sections during gameplay.
+
+
+---
+
+6. TileManager Integration
+
+The TileManager was modified to support section generation.
+
+The following method was added:
+
+public void generateSection(int section)
+
+If the generated section is 0, the selected row becomes a road.
+
+If the generated section is 1, the selected row becomes a river.
+
+This connects the procedural level generator with the existing game map.
+
+
+---
+
+7. Player Progress Tracking
+
+The player's Y-position is used to detect forward movement.
+
+A variable named:
+
+int lastPlayerY = 300;
+
+was added to keep track of the previous player position.
+
+The game checks:
+
+if (player.y < lastPlayerY)
+
+When the player moves forward, a new section is generated and the previous position is updated.
+
+This provides basic progress tracking and procedural section generation.
+
+
+---
+
+8. Increasing Difficulty
+
+To make the game progressively harder, the speed of cars and logs was increased according to the player's score.
+
+Score below 5
+
+The game uses the normal speed.
+
+Score 5 or above
+
+car1.setSpeed(3);
+car2.setSpeed(4);
+car3.setSpeed(5);
+car4.setSpeed(6);
+
+log1.speed = 3;
+log2.speed = -4;
+
+Score 10 or above
+
+car1.setSpeed(4);
+car2.setSpeed(5);
+car3.setSpeed(6);
+car4.setSpeed(7);
+
+log1.speed = 4;
+log2.speed = -5;
+
+Therefore, as the player progresses, avoiding cars and staying on logs becomes more difficult.
+
+
+---
+
+9. Score Reset
+
+When the player dies because of a car collision or falling into the river, the score is reset:
+
+score.resetScore();
+
+The player is then returned to the starting position:
+
+player.x = 380;
+player.y = 300;
+
+This ensures that each new attempt starts with a score of zero.
+
+
+---
+
+10. Testing
+
+The following tests were performed:
+
+Test	Result
+
+Player moves upward	Passed
+Score increases	Passed
+Score displayed on screen	Passed
+Random Road/River generation	Passed
+Difficulty increases at score 5	Passed
+Difficulty increases at score 10	Passed
+Score resets after death	Passed
+Game runs successfully	Passed
+
+
+
+---
+
+11. Challenges and Solutions
+
+Challenge 1: Random section generation
+
+Generating a new section every game frame would cause continuous random changes.
+
+Solution:
+The section generation was connected with player movement so that a new section is generated when the player moves forward.
+
+Challenge 2: Increasing difficulty
+
+The game needed to become harder as the player progressed.
+
+Solution:
+Car and log speeds were increased based on the player's score.
+
+Challenge 3: Maintaining the existing game system
+
+The new Week 7 features needed to work with the existing river, log, car, and collision systems.
+
+Solution:
+Score, LevelGenerator, and TileManager were integrated into the existing GamePanel without removing the previous game mechanics.
+
+
+---
+
+12. Expected Outcome
+
+After completing Week 7, the game has:
+
+A working score system.
+
+Player progress tracking.
+
+Random road/river section generation.
+
+Increasing difficulty.
+
+Score reset after player death.
+
+Dynamic gameplay behavior.
+
+
+The game is now more challenging and provides a better foundation for endless gameplay.
+
+
+---
+
+13. Conclusion
+
+Week 7 successfully implemented the Score System and Procedural Map Generation features of the Chicken Cross Road game. The player can now earn points by moving forward, while the game dynamically generates road and river sections. The difficulty also increases as the score becomes higher.
+
+These improvements make the game more engaging and prepare the project for the next stages of development.
