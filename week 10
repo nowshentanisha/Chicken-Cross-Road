@@ -1,0 +1,222 @@
+Week 10 Project Report
+
+Chicken Cross Road – 2D Java Game
+
+1. Week
+
+Week 10
+
+2. Topic
+
+Testing & Final Deployment
+
+3. Objective
+
+The main objective of Week 10 was to test the complete 2D Chicken Cross Road game, fix remaining bugs, improve the code structure, and prepare the final project for submission and demonstration.
+
+4. Activities Performed
+
+4.1 Testing All Features
+
+All major features of the game were tested, including:
+
+Main menu
+
+Start Game button
+
+Player movement using W, A, S, D
+
+Road and river areas
+
+Moving cars
+
+Moving logs
+
+Player-car collision
+
+River collision
+
+Score system
+
+High-score system
+
+Game Over screen
+
+Restart functionality
+
+Exit functionality
+
+Background music
+
+Collision sound
+
+Game graphics and animations
+
+
+4.2 Bug Fixing
+
+During testing, several issues were checked and fixed.
+
+Examples:
+
+Collision detection was tested.
+
+River and log interaction was tested.
+
+Player movement boundaries were checked.
+
+Game restart functionality was tested.
+
+High score saving and loading were checked.
+
+Audio-related problems were checked.
+
+Java compilation and execution errors were fixed.
+
+
+4.3 Code Structure Improvement
+
+The project was divided into several classes so that each class performs a specific task.
+
+Examples:
+
+Player.java → controls the player.
+
+Car.java → controls cars.
+
+Log.java → controls logs.
+
+Collision.java → handles collision detection.
+
+Score.java → manages score.
+
+GameManager.java → manages game state.
+
+LevelGenerator.java → generates new sections.
+
+TileManager.java → manages grass, road and river tiles.
+
+UIManager.java → manages menu, score and game-over screens.
+
+SaveSystem.java → saves and loads high score.
+
+AudioManager.java → manages game sounds.
+
+
+This makes the project easier to understand, maintain and modify.
+
+4.4 OOP Principles
+
+Object-Oriented Programming principles were applied in the project.
+
+The game uses separate classes and objects for different game components. For example, Player, Car, Log, and TileManager are separate classes.
+
+This improves modularity, reusability and maintainability of the program.
+
+4.5 Executable Package
+
+The Java project was compiled successfully and an executable JAR package was prepared.
+
+The JAR package contains the compiled game classes and can be used to run the final game using Java.
+
+Example:
+
+ChickenCrossRoad.jar
+
+The project was also tested from the terminal to make sure the compiled game could be executed.
+
+4.6 Documentation
+
+The project documentation was prepared to explain:
+
+Project objective
+
+Game features
+
+Class structure
+
+OOP concepts
+
+Game controls
+
+Collision system
+
+Score system
+
+Audio system
+
+Testing process
+
+Final result
+
+
+5. Testing Result
+
+Feature	Test Result
+
+Main Menu	Passed
+Start Game	Passed
+Player Movement	Passed
+Car Movement	Passed
+Log Movement	Passed
+Collision Detection	Passed
+River System	Passed
+Score System	Passed
+High Score	Passed
+Game Over	Passed
+Restart	Passed
+Exit	Passed
+Audio System	Passed
+Game Graphics	Passed
+JAR Package	Passed
+
+
+6. Final Outcome
+
+After completing Week 10, the project became a complete playable 2D Chicken Cross Road game developed using Java Swing and Java2D.
+
+The final game includes:
+
+Interactive player movement
+
+Cars and logs
+
+Road and river environments
+
+Collision detection
+
+Score and high-score system
+
+Main menu
+
+Game-over screen
+
+Restart option
+
+Audio system
+
+Improved graphics
+
+Save system
+
+Executable JAR package
+
+
+7. Conclusion
+
+In Week 10, the complete game was tested and the remaining bugs were fixed. The code structure was improved using Object-Oriented Programming principles. The final Java project was compiled and packaged as an executable JAR file.
+
+Therefore, the project successfully achieved the goal of creating a complete playable 2D Chicken Cross Road game.
+
+Final Deliverables:
+
+1. Final Java Project
+
+
+2. Source Code
+
+
+3. Project Documentation
+
+
+4. Executable JAR Package
