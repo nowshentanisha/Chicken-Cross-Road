@@ -1,0 +1,169 @@
+WEEK 9 PROJECT REPORT
+
+Chicken Cross Road Game
+
+1. Introduction
+
+In Week 9, the main focus was to improve the user interface and add data persistence to the Chicken Cross Road game. A main menu, game over screen, restart and exit options were added. A high-score system was also implemented using file handling.
+
+2. Objectives
+
+The main objectives of Week 9 were:
+
+To create a user-friendly main menu.
+
+To display the player's score and high score.
+
+To create a game over screen.
+
+To add Restart and Exit buttons.
+
+To save the player's high score in a file.
+
+To load the saved high score when the game starts again.
+
+To organize the user interface using a separate UIManager class.
+
+
+3. Main Menu
+
+A main menu was created for the game. It appears when the game starts.
+
+The main menu contains:
+
+CHICKEN CROSS ROAD
+
+[ START GAME ]
+
+[ EXIT ]
+
+Use W A S D to move
+
+The Start Game button starts the gameplay, while the Exit button closes the application.
+
+4. Score Display
+
+A score display was added to the gameplay screen.
+
+It shows:
+
+Score: 5
+High Score: 10
+
+The score increases when the chicken successfully moves forward.
+
+5. Game Over Screen
+
+When the chicken collides with a car or falls into the river, the game enters the Game Over state.
+
+The Game Over screen displays the current score and high score.
+
+It also provides two options:
+
+Restart
+
+Exit
+
+
+6. Restart Function
+
+The Restart button allows the player to start the game again after losing.
+
+When Restart is selected:
+
+The chicken returns to its starting position.
+
+The current score is reset to zero.
+
+Game objects are recreated.
+
+The game returns to the Playing state.
+
+
+7. Exit Function
+
+An Exit button was implemented in both the Main Menu and Game Over screen.
+
+When the player selects Exit, the game application closes.
+
+8. UIManager.java
+
+A new class named UIManager.java was created to manage the game's user interface.
+
+It manages three different states:
+
+MAIN_MENU
+PLAYING
+GAME_OVER
+
+The class is responsible for drawing the main menu, score display, game over screen, and buttons.
+
+9. SaveSystem.java
+
+A new class named SaveSystem.java was created for high-score data persistence.
+
+It contains two important methods:
+
+saveHighScore()
+
+and
+
+loadHighScore()
+
+The saveHighScore() method stores the high score in a file, while loadHighScore() reads the saved high score when the game starts.
+
+10. Data Persistence
+
+Data persistence allows important game data to remain available after the game is closed.
+
+In this project, the high score is stored in:
+
+highscore.txt
+
+For example:
+
+Game Score = 10
+       ↓
+New High Score
+       ↓
+Save to File
+       ↓
+Game Closed
+       ↓
+Game Started Again
+       ↓
+High Score = 10
+
+Therefore, the high score is not lost when the game is restarted.
+
+11. Technologies Used
+
+Java
+
+Java Swing
+
+Java AWT
+
+Java File Handling
+
+Object-Oriented Programming
+
+VS Code
+
+
+12. New Classes Added
+
+The following classes were added in Week 9:
+
+UIManager.java
+SaveSystem.java
+
+13. Result
+
+After completing Week 9, the game has a complete basic user interface. Players can start the game from the main menu, see their score, restart the game after losing, or exit the application.
+
+The high-score system also successfully saves and loads the highest score using file handling.
+
+14. Conclusion
+
+Week 9 successfully improved the user experience and functionality of the Chicken Cross Road game. The addition of the UIManager provides organized user-interface management, while SaveSystem provides persistent high-score storage. These features make the game more complete and user-friend
