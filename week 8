@@ -1,0 +1,155 @@
+WEEK 8 PROJECT REPORT
+
+Chicken Cross Road Game
+
+1. Introduction
+
+In Week 8, we improved the Chicken Cross Road game by adding an audio system and optimizing the game engine. The main focus was to make the game more interactive, smooth, and organized.
+
+2. Objectives
+
+The main objectives of Week 8 were:
+
+To add background music to the game.
+
+To add sound effects for different game events.
+
+To create an AudioManager class.
+
+To improve the game loop.
+
+To optimize object updating.
+
+To maintain smooth gameplay.
+
+
+3. Audio System
+
+An AudioManager.java class was added to manage the game's audio.
+
+The AudioManager handles:
+
+Background music
+
+Car collision sound
+
+Water sound
+
+
+The background music starts when the game starts. When the chicken collides with a car, a collision sound is played. When the chicken falls into the river without standing on a log, a water sound is played.
+
+4. AudioManager
+
+The AudioManager class contains separate methods for different sounds.
+
+Important methods include:
+
+playBackgroundMusic()
+
+This starts the background music.
+
+playCollisionSound()
+
+This plays the sound when the chicken hits a car.
+
+playWaterSound()
+
+This plays the sound when the chicken falls into the river.
+
+The audio is generated directly using Java's audio system, so external sound files are not required.
+
+5. Game Engine Optimization
+
+The game engine was improved by organizing the update() method into several smaller methods.
+
+The main update process is:
+
+update()
+   |
+   ├── handlePlayerInput()
+   ├── handleScrolling()
+   ├── updateCars()
+   ├── updateLogs()
+   ├── removeOffscreenObjects()
+   ├── checkCarCollision()
+   └── checkRiverCollision()
+
+This makes the code easier to understand and maintain.
+
+6. Object Optimization
+
+Cars and logs that are far outside the visible game area do not need to be continuously updated.
+
+Therefore, the game checks whether an object is near the visible screen before updating it.
+
+For example:
+
+if (car.y > -50 && car.y < HEIGHT + 50) {
+    car.update();
+}
+
+The same approach is used for logs.
+
+This reduces unnecessary processing.
+
+7. Improved Game Loop
+
+The game loop was also improved to provide approximately 60 frames per second.
+
+The game measures the time required for each update and adjusts the sleep time accordingly.
+
+This helps provide smoother gameplay.
+
+8. River and Log System
+
+The river system was maintained so that logs stay within the river area.
+
+Two logs move in opposite directions:
+
+One log moves from left to right.
+
+One log moves from right to left.
+
+
+The chicken can move together with a log when it stands on it.
+
+If the chicken enters the river without touching a log, the water sound is played and the player is reset.
+
+9. Collision System
+
+The existing collision system was integrated with the new audio system.
+
+When the chicken touches a car:
+
+Chicken
+   ↓
+Car Collision
+   ↓
+Collision Sound
+   ↓
+Player Reset
+
+The score is also reset after the player dies.
+
+10. Technologies Used
+
+Java
+
+Java Swing
+
+Java AWT
+
+Java Sound API
+
+VS Code
+
+Object-Oriented Programming
+
+
+11. Result
+
+After completing Week 8, the game became more interactive and organized. Background music and sound effects were added, while the game loop and object updating were optimized for smoother gameplay.
+
+12. Conclusion
+
+Week 8 successfully improved both the audio and performance aspects of the Chicken Cross Road game. The AudioManager provides centralized audio control, while the optimized game loop makes the game code more organized and efficient. These improvements make the game more enjoyable and provide a better foundation for future development.
