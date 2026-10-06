@@ -1,0 +1,42 @@
+Installation and Execution
+
+The Chicken Cross Road project is available on GitHub. Users can download the source code, compile the project, and run the game by following the steps below.
+
+Step 1: Clone the Repository
+
+Clone the project using the following command:
+
+git clone https://github.com/nowshentanisha/Chicken-Cross-Road.git
+
+Alternatively, users can download the project as a ZIP file from the GitHub repository and extract it.
+
+Step 2: Install Java
+
+Install Java Development Kit (JDK 21) or the required Java version.
+
+Step 3: Open the Project
+
+Open the project folder in Visual Studio Code, IntelliJ IDEA, or any Java-supported IDE.
+
+Step 4: Build the Project
+
+Compile the Java source files or use the IDE's build feature.
+
+Step 5: Run the Game
+
+Run the Main.java file to start the game.
+
+Step 6: Play the Game
+Click Start to begin the game.
+Use the keyboard to control the player.
+Avoid moving vehicles while crossing the road.
+Cross the river safely by standing on floating logs.
+Earn points as you progress through the game.
+If the player collides with a vehicle or falls into the river, the Game Over screen will appear.
+Select Restart to play again or Exit to close the game.
+GitHub Repository
+
+The complete source code of the project is available on GitHub.
+
+Repository:
+https://github.com/nowshentanisha/Chicken-Cross-Road
